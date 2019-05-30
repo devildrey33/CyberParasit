@@ -1,0 +1,71 @@
+<!-- 
+    Three.js CyberParasit creado por Josep Antoni Bover Comas el 08/08/2017
+
+        Vista por defecto en el Laboratorio de pruebas  
+		devildrey33_Lab->Opciones->Vista = Preview;
+
+        Ultima modificación el 27/08/2017
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <title>CyberParasit</title>
+        <!-- Estilos CSS para el test -->
+        <link rel='stylesheet' href='/ObjetoCanvas/CSS/ObjetoCanvas.css' />        
+        
+        <!-- Estilos CSS para el ObjetoTest -->
+        <!--<link rel='stylesheet' href='/Ejemplos/Utils/ObjetoTest.css' /> -->
+        
+        <!-- Estilos CSS para el CyberParasit -->
+        <link rel='stylesheet' href='CyberParasit.css' />
+        
+        <!-- Código CSS -->
+        <style> 
+        </style>
+        
+        <!-- Si deseas utilizar JQuery descomenta la siguiente línea -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+        <!-- Three.JS -->
+        <script src="/ObjetoCanvas/JS/three.min.js"></script>
+        <script src="/ObjetoCanvas/JS/LegacyJSONLoader.js"></script> <!-- OLD JSON format -->
+
+        <!-- ObjetoCanvas similar al ObjetoBanner para testear Banners -->
+        <script src="/ObjetoCanvas/JS/ObjetoCanvas.js"></script>
+        
+        <!-- Objeto para crear animaciones de tiempo -->
+        <script src="/ObjetoAnimacion/JS/ObjetoAnimacion.js"></script>
+                
+        
+        <!-- Objeto que controla el sonido -->
+        <script src="CyberParasit_Audio.js"></script>
+        <!-- Objeto que controla las animaciones -->
+        <script src="CyberParasit_Animaciones.js"></script>
+        <!-- Tests de las animaciones (descomentar para mostrar los menús -->
+<!--        <script src="/Ejemplos/Utils/ObjetoTest.js"></script>
+        <script src="/Ejemplos/CyberParasit/CyberParasit_Test.js"></script>  -->
+        <!-- Objeto CyberParasit principal -->
+        <script src="CyberParasit.js"></script>
+        
+        <!-- Código javascript --> 
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div id='ObjetoCanvas'>
+            <!-- Botones para iniciar y repetir el show -->
+            <div id="Empezar" class='MarcoCanvas' onclick="CP.IniciarShow();">Empezar</div>
+            <div id="Repetir" class='MarcoCanvas' onclick="CP.IniciarShow();">Repetir</div>
+            <div id="Creditos" class='MarcoCanvas' visible='true'>
+                <span>Programación / Animación : </span>
+                <div><a href='https://devildrey33.es' target='_blank'>Josep Antoni Bover Comas</a></div><br />
+                <span>Artista y canción :</span>
+                <div><a href='https://www.jamendo.com/artist/480345/levenrain' target='_blank'>LevenRain</a></div>
+                <div><a href='https://www.jamendo.com/track/1349290/actionman-versus-the-cyberparasites' target='_blank'>ActionMan Versus The CyberParasites</a></div><br />
+                <span>Malla de la placa madre : </span>
+                <div><a href='https://www.turbosquid.com/Search/Artists/nobicasa' target='_blank'>Nobicasa</a></div>
+
+            </div>
+        </div>
+    </body>
+</html>        

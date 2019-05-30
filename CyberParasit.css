@@ -1,0 +1,67 @@
+/* Three.js CyberParasit creado por Josep Antoni Bover Comas el 15/08/2017 para devildrey33.es
+        Ultima modificación el 30/08/2017  */
+
+#Empezar, #Repetir {
+    bottom: 50%;
+    left: calc(50%);
+    font-size: 42px;
+    text-align:center;
+    cursor:pointer;
+    transform:perspective(600px) rotateX(-90deg) translateX(-50%);
+    z-index:20;
+    font-family:'Orbitron',sans-serif;
+}
+
+#Empezar:hover, #Repetir:hover {
+    color:rgb(234,80,78);
+}
+
+#Empezar[visible=true], #Repetir[visible=true] {
+    transform:perspective(600px) rotateX(0deg) translateX(-50%);                     
+}
+
+#BeatActual > div {
+    margin: 17px auto 0px auto;
+    text-align: center;
+}
+
+
+
+#Creditos {
+    font-family: monospace;
+    font-size: 1.3rem;
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding: 10px;
+    transform:perspective(600px) rotateX(-90deg);
+    margin: 0px;
+    z-index:20;    
+}
+
+#Creditos[visible=true] {
+    transform:perspective(600px) rotateX(0deg);    
+}
+
+/*#Creditos > table tr > td:nth-child(1) {
+    font-weight: bold;
+}*/
+
+#Creditos a {
+    color:#CCC;
+    text-decoration:none;
+    transition:0.4s;
+    text-shadow: 1px 1px 3px #333;
+    font-weight: bold;
+}
+
+#Creditos > div { margin-left:20px; }
+
+#Creditos a:visited {
+    color:#EEE;
+}
+
+#Creditos a:hover {
+    color:rgb(234,80,78);
+}
+
